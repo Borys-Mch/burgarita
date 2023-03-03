@@ -10,7 +10,7 @@ import {
   Typography,
 } from "@mui/material";
 
-import { headerMenu } from "../constants";
+import { menuItems } from "../constants";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -58,16 +58,16 @@ const Navbar = () => {
               right: "40px",
               top: "140px",
             }}>
-            {headerMenu.map((menu) => (
+            {menuItems.map((item) => (
               <Link
-                href={menu.url}
-                key={menu.id}
+                href={item.url}
+                key={item.id}
                 fontSize={28}
                 fontWeight={600}
                 lineHeight={2.2}
                 color="#D1D1D2"
                 underline="none">
-                {menu.title}
+                {item.title}
               </Link>
             ))}
           </Stack>
