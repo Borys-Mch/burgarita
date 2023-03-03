@@ -16,7 +16,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <Container>
+    <Container maxWidth="xl">
       <Stack
         py={8}
         direction="row"

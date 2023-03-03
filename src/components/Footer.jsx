@@ -1,13 +1,12 @@
-import { Image } from "@mui/icons-material";
-import { Box, Container, Link, Stack, Typography } from "@mui/material";
 import React from "react";
+import { Box, Container, Link, Stack, Typography } from "@mui/material";
 
 import { menuItems } from "../constants";
 import { socialIcons } from "../constants";
 
 const Footer = () => {
   return (
-    <Container>
+    <Container maxWidth="xl">
       <Stack
         py={8}
         direction={{ xs: "column", md: "row" }}
