@@ -1,6 +1,7 @@
 import React from "react";
-import { Box, Button, Container, Stack, Typography } from "@mui/material";
+import { Box, Button, Container, Grid, Stack, Typography } from "@mui/material";
 
+import { exclusiveItems } from "../constants";
 import exclusiveImg from "../assets/exclusive.png";
 import pepperImg from "../assets/pepper.png";
 
@@ -59,6 +60,31 @@ const ExclusiveSection = () => {
           bottom="-100px"
           left="30%"
         />
+      </Stack>
+      <Stack>
+        <Grid container mt={5} spacing={5} columns={{ xs: 3, md: 6, lg: 12 }}>
+          {exclusiveItems.map((item) => (
+            <Grid item xs={3} key={item.id}>
+              <Stack alignItems="center">
+                <Box component="img" src={item.img} alt={item.title} />
+                <Typography
+                  fontSize={32}
+                  fontWeight={600}
+                  textAlign="center"
+                  color="#D1D1D2">
+                  {item.title}
+                </Typography>
+                <Typography
+                  fontSize={20}
+                  fontWeight={400}
+                  textAlign="center"
+                  color="#D1D1D2">
+                  {item.desc}
+                </Typography>
+              </Stack>
+            </Grid>
+          ))}
+        </Grid>
       </Stack>
     </Container>
   );
