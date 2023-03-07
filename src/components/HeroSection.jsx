@@ -21,13 +21,16 @@ const HeroSection = () => {
 
   return (
     <Container maxWidth="xl">
-      <Stack pt={20} direction="row">
+      <Stack
+        pt={20}
+        direction={{ xs: "column-reverse", sm: "row" }}
+        overflow="hidden">
         <Box>
           <Button
             variant="outlined"
             color="warning"
             sx={{
-              width: "420px",
+              width: "375px",
               height: "97px",
               fontSize: "32px",
               fontWeight: 600,
@@ -38,11 +41,15 @@ const HeroSection = () => {
             }}>
             Tasty Food Forever
           </Button>
-          <Typography mt={7} fontSize={90} color="white" lineHeight="117px">
+          <Typography
+            mt={7}
+            fontSize={{ xs: 50, lg: 90 }}
+            color="white"
+            lineHeight={{ lg: "117px" }}>
             Hot new items in the{" "}
             <span style={{ color: "#FF9900" }}>restaurant</span>
           </Typography>
-          <Typography mt={5} fontSize={28} color="#D1D1D2">
+          <Typography mt={5} fontSize={{ xs: 20, lg: 28 }} color="#D1D1D2">
             Lorem Ipsum is{" "}
             <span style={{ color: "#FF9900" }}>
               simply dummy text of the printing
@@ -81,7 +88,13 @@ const HeroSection = () => {
             </Button>
           </Stack>
         </Box>
-        <Box component="img" src={heroImg} alt="Hero" />
+        <Box
+          component="img"
+          src={heroImg}
+          alt="Hero"
+          width={{ sm: "550px", lg: "720px" }}
+          height={{ sm: "524px", lg: "686px" }}
+        />
       </Stack>
     </Container>
   );
