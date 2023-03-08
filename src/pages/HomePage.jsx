@@ -1,6 +1,7 @@
 import React from "react";
 import ExclusiveSection from "../components/ExclusiveSection";
 import HeroSection from "../components/HeroSection";
+import RecipeSection from "../components/RecipeSection";
 import SteakPlatterSection from "../components/SteakPlatterSection";
 
 const HomePage = () => {
@@ -9,6 +10,7 @@ const HomePage = () => {
       <HeroSection />
       <SteakPlatterSection />
       <ExclusiveSection />
+      <RecipeSection />
     </>
   );
 };
