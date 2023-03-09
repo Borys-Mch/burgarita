@@ -14,22 +14,18 @@ const ExclusiveSection = () => {
         direction={{ xs: "column-reverse", sm: "row" }}
         alignItems="center">
         <Box>
-          <Typography
-            fontSize={{ xs: 40, md: 50, lg: 90 }}
-            fontWeight={700}
-            color="white">
-            Explore our <span style={{ color: "#FF9900" }}>exclusive</span>{" "}
-            dishes
-          </Typography>
-          <Typography
-            mt={{ xs: 2, md: 5 }}
-            fontSize={{ xs: 20, lg: 28 }}
-            fontWeight={600}
-            color="white"
-            maxWidth="sm">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text .
-          </Typography>
+          <Box>
+            <Typography variant="headSec">
+              Explore our <span style={{ color: "#FF9900" }}>exclusive</span>{" "}
+              dishes
+            </Typography>
+          </Box>
+          <Box mt={{ xs: 2, md: 5 }} maxWidth="sm">
+            <Typography variant="descrSec">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text.
+            </Typography>
+          </Box>
           <Button
             variant="contained"
             color="warning"
@@ -62,7 +58,7 @@ const ExclusiveSection = () => {
         />
       </Stack>
       <Stack>
-        <Grid container mt={5} spacing={5} columns={{ xs: 3, md: 6, lg: 12 }}>
+        <Grid container mt={5} spacing={5} columns={{ xs: 3, sm: 6, lg: 12 }}>
           {exclusiveItems.map((item) => (
             <Grid item xs={3} key={item.id}>
               <Stack alignItems="center">

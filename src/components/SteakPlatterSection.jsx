@@ -7,25 +7,21 @@ const SteakPlatterSection = () => {
   return (
     <Container maxWidth="xl">
       <Box my={25}>
-        <Typography
-          fontSize={{ xs: 40, md: 50, lg: 90 }}
-          fontWeight={700}
-          textAlign="center"
-          color="white">
-          Try on of the there <br /> new{" "}
-          <span style={{ color: "#FF9900" }}>steak platter</span>
-        </Typography>
-        <Typography
-          mt={{ xs: 2, md: 5 }}
-          fontSize={{ xs: 20, lg: 28 }}
-          fontWeight={600}
-          textAlign="center"
-          color="white">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          <br />
-          industry. Lorem Ipsum has been the industry's standard dummy text .
-        </Typography>
-        <Grid container spacing={2} justifyContent="center">
+        <Box textAlign="center">
+          <Typography variant="headSec">
+            Try on of the there <br /> new{" "}
+            <span style={{ color: "#FF9900" }}>steak platter</span>
+          </Typography>
+        </Box>
+        <Box mt={{ xs: 2, md: 5 }} textAlign="center">
+          <Typography variant="descrSec">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            <br />
+            industry. Lorem Ipsum has been the industry's standard dummy text .
+          </Typography>
+        </Box>
+
+        <Grid container spacing={2} justifyContent="space-between">
           {steakItem.map((item) => (
             <Grid item key={item.id}>
               <Card

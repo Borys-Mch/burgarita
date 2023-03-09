@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
 :root{
     background-image: url(/spa.jpeg);
     background-size: cover;
 }
 
 body{
+    font-family: "Montserrat";
     background: radial-gradient(50% 50% at 50% 50%, rgba(22, 22, 22, 0.44) 0%, rgba(22, 22, 22, 0.78) 100%);
     margin: 0;
 }

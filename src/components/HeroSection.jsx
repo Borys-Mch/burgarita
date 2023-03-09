@@ -41,22 +41,22 @@ const HeroSection = () => {
             }}>
             Tasty Food Forever
           </Button>
-          <Typography
-            mt={7}
-            fontSize={{ xs: 50, lg: 90 }}
-            color="white"
-            lineHeight={{ lg: "117px" }}>
-            Hot new items in the{" "}
-            <span style={{ color: "#FF9900" }}>restaurant</span>
-          </Typography>
-          <Typography mt={5} fontSize={{ xs: 20, lg: 28 }} color="#D1D1D2">
-            Lorem Ipsum is{" "}
-            <span style={{ color: "#FF9900" }}>
-              simply dummy text of the printing
-            </span>{" "}
-            and typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text .
-          </Typography>
+          <Box mt={7}>
+            <Typography variant="headSec">
+              Hot new items in the{" "}
+              <span style={{ color: "#FF9900" }}>restaurant</span>
+            </Typography>
+          </Box>
+          <Box mt={5}>
+            <Typography variant="descrSec">
+              Lorem Ipsum is{" "}
+              <span style={{ color: "#FF9900" }}>
+                simply dummy text of the printing
+              </span>{" "}
+              and typesetting industry. Lorem Ipsum has been the industry's
+              standard dummy text .
+            </Typography>
+          </Box>
 
           <Stack
             mt={7}
