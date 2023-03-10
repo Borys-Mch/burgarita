@@ -1,4 +1,5 @@
 import React from "react";
+import BookTable from "../components/BookTable";
 import ExclusiveSection from "../components/ExclusiveSection";
 import HeroSection from "../components/HeroSection";
 import RecipeSection from "../components/RecipeSection";
@@ -11,6 +12,7 @@ const HomePage = () => {
       <SteakPlatterSection />
       <ExclusiveSection />
       <RecipeSection />
+      <BookTable />
     </>
   );
 };

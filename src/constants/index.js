@@ -68,13 +68,13 @@ export const steakItem = [
     img: `${steak1}`,
   },
   {
-    id: 1,
+    id: 2,
     title: "Beef steak with saulted veg",
     price: 40.0,
     img: `${steak2}`,
   },
   {
-    id: 1,
+    id: 3,
     title: "Barbecue Grill Beefsteak",
     price: 38.5,
     img: `${steak3}`,
