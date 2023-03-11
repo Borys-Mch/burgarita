@@ -4,7 +4,7 @@
 
 ## Built using:
 
-- Front-end library: Next js
+- Front-end library: React js
 - CSS framework: Material UI
 
 ## Figma sample
